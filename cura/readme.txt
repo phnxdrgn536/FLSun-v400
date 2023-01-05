@@ -8,7 +8,7 @@
 
 5. Place the "flsun_v400_quality" folder in the "quality" directory under the cura configuration path.
 
-6. Place the "flsun_v400_variants" folder in the "variants" directory under the cura configuration path.
+6. Place the "flsun_v400_variants" folder in the "variants" directory under the cura configuration path. (NOTE: only copy the nozzle sizes you want to use if you dont want all nozzle sizes to be shown)
 
 7. Choose either "flsun_v400_STOCK.def.json" or "flsun_v400_updated_firmware.def.json" depending on if you have updated the stock firmware or not and RENAME TO flsun_v400.def.json!!! place the chosen file in the "definitions" directory in the configuration path.
 
