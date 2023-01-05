@@ -1,4 +1,4 @@
-1.backup and save a copy of your V400 files that were loaded into cura from the FLSUN thumb drive and the remove these files from cura (or start with a clean install)
+1.backup and save a copy of your V400 files that were loaded into cura from the FLSUN thumb drive and then remove these files from cura (or start with a clean install)
 
 2. Open cura and select Help-->Show Configuration Folder
 
