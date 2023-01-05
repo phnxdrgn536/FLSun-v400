@@ -10,7 +10,7 @@
 
 6. Place the "flsun_v400_variants" folder in the "variants" directory under the cura configuration path.
 
-7. Choose either "flsun_v400_STOCK.def.json" or "flsun_v400_updated_firmware.def.json" depending on if you have updated the stock firmware or not and place the chosen file in the "definitions" directory in the configuration path.
+7. Choose either "flsun_v400_STOCK.def.json" or "flsun_v400_updated_firmware.def.json" depending on if you have updated the stock firmware or not and RENAME TO flsun_v400.def.json!!! place the chosen file in the "definitions" directory in the configuration path.
 
 8. Place the "flsun_v400. stl" file under the "meshes" directory in the configuration path.
 
