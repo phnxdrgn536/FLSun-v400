@@ -19,3 +19,5 @@
 V1.0.1 There are three nozzle sizes (0.25, 0.4, 0.6, and 0.8) to select from as well as under the 0.4 nozzle selection you have sub catagories of "default" "engineering" "visual" and "draft".
 
 I also reworked the definition file for the V400 in order to remove the annoying yellow "warning" that occurs when you set print speed to 400
+
+I have added testing modles for those that want to print with a standardized test print to help give feedback on these profiles.
