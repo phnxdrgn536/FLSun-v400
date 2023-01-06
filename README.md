@@ -9,4 +9,4 @@ Anyone who would like to help contribute to this GitHub whether it be with writi
 [ ![Download](https://viatesting.files.wordpress.com/2020/03/paypal-donate-button.png) ](https://www.paypal.me/phnxdrgn536)
 
 <br />
-google-site-verification: google11045d17377e28ee.html
+<meta name="google-site-verification" content="eb2YYJj-4wQhYDYOwVVPqjZcSYBYNtfb4C_Jn26zf2U" />
