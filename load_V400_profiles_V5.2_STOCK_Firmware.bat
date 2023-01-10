@@ -28,7 +28,7 @@ cd %appdata%\cura\5.2\quality\ABS\0.8 && (curl -O https://raw.githubusercontent.
 
 cd %appdata%\cura\5.2\quality\PETG && md 0.25 0.4 0.6 0.8
 
-cd %appdata%\cura\5.2\quality\PETG\0.4 && (curl -O https://raw.githubusercontent.com/phnxdrgn536/FLSun-v400/main/cura/quality/PETG/0.4/flsun_v400_0.4_ABS_Draft_Print.inst.cfg -O https://raw.githubusercontent.com/phnxdrgn536/FLSun-v400/main/cura/quality/PETG/0.4/flsun_v400_0.4_ABS_Fast_Print.inst.cfg -O https://raw.githubusercontent.com/phnxdrgn536/FLSun-v400/main/cura/quality/PETG/0.4/flsun_v400_0.4_ABS_High_Quality.inst.cfg -O https://raw.githubusercontent.com/phnxdrgn536/FLSun-v400/main/cura/quality/PETG/0.4/flsun_v400_0.4_ABS_Normal_Quality.inst.cfg -O https://raw.githubusercontent.com/phnxdrgn536/FLSun-v400/main/cura/quality/PETG/0.4/flsun_v400_0.4_ABS_VeryDraft_Print.inst.cfg)
+cd %appdata%\cura\5.2\quality\PETG\0.4 && (curl -O https://raw.githubusercontent.com/phnxdrgn536/FLSun-v400/main/cura/quality/PETG/0.4/flsun_v400_0.4_PETG_Draft_Print.inst.cfg -O https://raw.githubusercontent.com/phnxdrgn536/FLSun-v400/main/cura/quality/PETG/0.4/flsun_v400_0.4_PETG_Fast_Print.inst.cfg -O https://raw.githubusercontent.com/phnxdrgn536/FLSun-v400/main/cura/quality/PETG/0.4/flsun_v400_0.4_PETG_High_Quality.inst.cfg -O https://raw.githubusercontent.com/phnxdrgn536/FLSun-v400/main/cura/quality/PETG/0.4/flsun_v400_0.4_PETG_Normal_Quality.inst.cfg -O https://raw.githubusercontent.com/phnxdrgn536/FLSun-v400/main/cura/quality/PETG/0.4/flsun_v400_0.4_PETG_VeryDraft_Print.inst.cfg)
 
 cd %appdata%\cura\5.2\quality\PLA && md 0.25 0.4 0.6 0.8
 
