@@ -987,10 +987,10 @@
             "default_value": 15
         },
         "machine_start_gcode": {
-            "default_value": ";Nozzle diameter = {machine_nozzle_size}\n;Filament type = {material_type}\n;Filament name = {material_brand} {material_name}\n;Filament weight = {filament_weight}\n;M109 S{material_print_temperature}\n;M190 S{material_bed_temperature}\nSTART_PRINT BED_TEMP={material_bed_temperature_layer_0} EXTRUDER_TEMP={material_print_temperature_layer_0}\nSKEW_PROFILE LOAD=my_skew_profile\n"
+            "default_value": ";Nozzle diameter = {machine_nozzle_size}\n;Filament type = {material_type}\n;Filament name = {material_brand} {material_name}\n;Filament weight = {filament_weight}\n;M109 S{material_print_temperature}\n;M190 S{material_bed_temperature}\nSTART_PRINT BED_TEMP={material_bed_temperature_layer_0} EXTRUDER_TEMP={material_print_temperature_layer_0}\n"
         },
         "machine_end_gcode": {
-            "default_value": "SET_SKEW CLEAR=1\nEND_PRINT\n"
+            "default_value": "END_PRINT\n"
         }
     }
 }
