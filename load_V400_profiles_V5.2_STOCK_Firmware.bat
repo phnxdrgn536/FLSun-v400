@@ -2,7 +2,7 @@ cd %appdata%\cura\5.2 && md meshes
 
 cd %appdata%\cura\5.2\meshes && (curl -O https://raw.githubusercontent.com/phnxdrgn536/FLSun-v400/main/cura/meshes/flsun_v400.stl)
 
-cd %appdata%\cura\5.2\definitions && (curl -o flsun_v400.def.json https://raw.githubusercontent.com/phnxdrgn536/FLSun-v400/main/cura/flsun_v400_STOCK.def.json)
+cd %appdata%\cura\5.2\definitions && (curl -o flsun_v400.def.json https://raw.githubusercontent.com/phnxdrgn536/FLSun-v400/main/cura/definitions/flsun_v400_STOCK.def.json)
 
 cd %appdata%\cura\5.2\extruders && (curl -O https://raw.githubusercontent.com/phnxdrgn536/FLSun-v400/main/cura/extruders/flsun_v400_extruder_0.def.json)
 
