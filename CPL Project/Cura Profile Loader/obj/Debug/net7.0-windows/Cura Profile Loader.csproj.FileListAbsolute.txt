@@ -1,0 +1,17 @@
+C:\Users\jljac\source\repos\CPL\Cura Profile Loader\obj\Debug\net7.0-windows\Cura Profile Loader.csproj.AssemblyReference.cache
+C:\Users\jljac\source\repos\CPL\Cura Profile Loader\obj\Debug\net7.0-windows\Cura_Profile_Loader.Form1.resources
+C:\Users\jljac\source\repos\CPL\Cura Profile Loader\obj\Debug\net7.0-windows\Cura Profile Loader.csproj.GenerateResource.cache
+C:\Users\jljac\source\repos\CPL\Cura Profile Loader\obj\Debug\net7.0-windows\Cura Profile Loader.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\jljac\source\repos\CPL\Cura Profile Loader\obj\Debug\net7.0-windows\Cura Profile Loader.AssemblyInfoInputs.cache
+C:\Users\jljac\source\repos\CPL\Cura Profile Loader\obj\Debug\net7.0-windows\Cura Profile Loader.AssemblyInfo.cs
+C:\Users\jljac\source\repos\CPL\Cura Profile Loader\obj\Debug\net7.0-windows\Cura Profile Loader.csproj.CoreCompileInputs.cache
+C:\Users\jljac\source\repos\CPL\Cura Profile Loader\bin\Debug\net7.0-windows\Cura Profile Loader.exe
+C:\Users\jljac\source\repos\CPL\Cura Profile Loader\bin\Debug\net7.0-windows\Cura Profile Loader.deps.json
+C:\Users\jljac\source\repos\CPL\Cura Profile Loader\bin\Debug\net7.0-windows\Cura Profile Loader.runtimeconfig.json
+C:\Users\jljac\source\repos\CPL\Cura Profile Loader\bin\Debug\net7.0-windows\Cura Profile Loader.dll
+C:\Users\jljac\source\repos\CPL\Cura Profile Loader\bin\Debug\net7.0-windows\Cura Profile Loader.pdb
+C:\Users\jljac\source\repos\CPL\Cura Profile Loader\obj\Debug\net7.0-windows\Cura Profile Loader.dll
+C:\Users\jljac\source\repos\CPL\Cura Profile Loader\obj\Debug\net7.0-windows\refint\Cura Profile Loader.dll
+C:\Users\jljac\source\repos\CPL\Cura Profile Loader\obj\Debug\net7.0-windows\Cura Profile Loader.pdb
+C:\Users\jljac\source\repos\CPL\Cura Profile Loader\obj\Debug\net7.0-windows\Cura Profile Loader.genruntimeconfig.cache
+C:\Users\jljac\source\repos\CPL\Cura Profile Loader\obj\Debug\net7.0-windows\ref\Cura Profile Loader.dll

@@ -1,0 +1,5 @@
+C:\Users\jljac\source\repos\CPL\Cura Profile Loader\bin\Release\net7.0-windows\app.publish\Cura Profile Loader.exe
+C:\Users\jljac\source\repos\CPL\Cura Profile Loader\bin\Release\net7.0-windows\app.publish\Cura Profile Loader.dll
+C:\Users\jljac\source\repos\CPL\Cura Profile Loader\bin\Release\net7.0-windows\app.publish\Cura Profile Loader.deps.json
+C:\Users\jljac\source\repos\CPL\Cura Profile Loader\bin\Release\net7.0-windows\app.publish\Cura Profile Loader.runtimeconfig.json
+C:\Users\jljac\source\repos\CPL\Cura Profile Loader\bin\Release\net7.0-windows\app.publish\Cura Profile Loader.pdb
