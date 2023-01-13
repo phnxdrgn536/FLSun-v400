@@ -1,7 +1,0 @@
-C:\Users\jljac\source\repos\CPL\Cura Profile Loader\bin\Release\net7.0-windows\win-x86\app.publish\Cura Profile Loader.pdb
-C:\Users\jljac\source\repos\CPL\Cura Profile Loader\bin\Release\net7.0-windows\win-x86\app.publish\D3DCompiler_47_cor3.dll
-C:\Users\jljac\source\repos\CPL\Cura Profile Loader\bin\Release\net7.0-windows\win-x86\app.publish\PenImc_cor3.dll
-C:\Users\jljac\source\repos\CPL\Cura Profile Loader\bin\Release\net7.0-windows\win-x86\app.publish\PresentationNative_cor3.dll
-C:\Users\jljac\source\repos\CPL\Cura Profile Loader\bin\Release\net7.0-windows\win-x86\app.publish\vcruntime140_cor3.dll
-C:\Users\jljac\source\repos\CPL\Cura Profile Loader\bin\Release\net7.0-windows\win-x86\app.publish\wpfgfx_cor3.dll
-C:\Users\jljac\source\repos\CPL\Cura Profile Loader\bin\Release\net7.0-windows\win-x86\app.publish\Cura Profile Loader.exe
