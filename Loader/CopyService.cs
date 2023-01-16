@@ -60,7 +60,14 @@ public class CopyService
 
         if (!_whatIf)
         {
-            download = await _client.GetStringAsync(url);
+            try
+            {
+                download = await _client.GetStringAsync(url);
+            }
+            catch (Exception ex)
+            {
+                logger.WriteLine("Error", ex.ToString());
+            }
         }
 
         WriteFile(logger, dir, Path.GetFileName(url), download);
