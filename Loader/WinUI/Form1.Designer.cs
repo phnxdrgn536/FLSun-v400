@@ -1,4 +1,4 @@
-﻿namespace Loader;
+﻿namespace Loader.WinUI;
 
 partial class Form1
 {

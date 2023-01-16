@@ -1,4 +1,4 @@
-namespace Loader;
+namespace Loader.Library;
 
 public enum Filaments
 {

@@ -1,4 +1,6 @@
-namespace Loader;
+using Loader.Library;
+
+namespace Loader.WinUI;
 
 public partial class Form1 : Form
 {

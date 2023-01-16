@@ -13,4 +13,8 @@
     <Content Include="Assets/phnxdrgn.ico" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\Library\Library.csproj" />
+  </ItemGroup>
+
 </Project>

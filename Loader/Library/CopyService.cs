@@ -1,6 +1,6 @@
 using System.Runtime.InteropServices;
 
-namespace Loader;
+namespace Loader.Library;
 
 public class CopyService
 {

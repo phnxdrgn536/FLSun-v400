@@ -1,4 +1,4 @@
-namespace Loader;
+namespace Loader.WinUI;
 
 static class Program
 {

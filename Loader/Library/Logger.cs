@@ -1,6 +1,6 @@
 using System.Text;
 
-namespace Loader;
+namespace Loader.Library;
 
 public class Logger : IDisposable
 {

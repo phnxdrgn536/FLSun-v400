@@ -1,4 +1,4 @@
-namespace Loader;
+namespace Loader.Library;
 
 public record DownloadDirectory(string Name, string[] Files);
 
