@@ -2,7 +2,7 @@ namespace Loader;
 
 public class CopyService
 {
-    private const string BASE_ADDRESS = "https://raw.githubusercontent.com/phnxdrgn536/FLSun-v400/main/";
+    private const string BASE_ADDRESS = "https://raw.githubusercontent.com/phnxdrgn536/FLSun-v400/main/cura/";
 
     private readonly bool _whatIf;
     private readonly DownloadList _downloads = new();
@@ -24,7 +24,7 @@ public class CopyService
             await IterateDirectory(logger, directory, curaDirectory);
         }
 
-        await DownloadFile(logger, $"/cura/flsun_v400_{firmware}.def.json", Path.Combine(curaDirectory, Directories.Definitions));
+        await DownloadFile(logger, $"flsun_v400_{firmware}.def.json", Path.Combine(curaDirectory, Directories.Definitions));
 
         var originalFilepath = Path.Combine(curaDirectory, Directories.Definitions, $"flsun_v400_{firmware}.def.json");
         var newFilepath = Path.Combine(curaDirectory, Directories.Definitions, "flsun_v400.def.json");
@@ -49,7 +49,7 @@ public class CopyService
         }
     }
 
-    private string GetCuraLocation(string? version) =>
+    private static string GetCuraLocation(string? version) =>
         $"{Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData)}\\cura\\{version}";
 
     private async Task DownloadFile(Logger logger, string url, string dir)
@@ -67,6 +67,8 @@ public class CopyService
             catch (Exception ex)
             {
                 logger.WriteLine("Error", ex.ToString());
+
+                throw;
             }
         }
 
