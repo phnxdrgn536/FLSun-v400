@@ -1,3 +1,5 @@
+using System.Runtime.InteropServices;
+
 namespace Loader;
 
 public class CopyService
@@ -50,7 +52,22 @@ public class CopyService
     }
 
     private static string GetCuraLocation(string? version) =>
-        $"{Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData)}\\cura\\{version}";
+        Path.Join(GetAppDataDirectory(), "cura", version);
+
+    private static string GetAppDataDirectory()
+    {
+        if (RuntimeInformation.IsOSPlatform(OSPlatform.Windows))
+        {
+            return Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData);
+        }
+
+        if (RuntimeInformation.IsOSPlatform(OSPlatform.OSX))
+        {
+            return Path.Join(Environment.GetFolderPath(Environment.SpecialFolder.UserProfile), "Library", "Application Support");
+        }
+
+        throw new InvalidOperationException($"Unknown operating system. - {RuntimeEnvironment.GetSystemVersion()}.");
+    }
 
     private async Task DownloadFile(Logger logger, string url, string dir)
     {
