@@ -9,6 +9,13 @@ public partial class Form1 : Form
     public Form1()
     {
         InitializeComponent();
+
+        Cura_v.Items.Clear();
+        Firm_v.Items.Clear();
+        Cura_v.Items.AddRange(DownloadList.Versions);
+        Firm_v.Items.AddRange(DownloadList.Firmwares);
+        Cura_v.SelectedIndex = 0;
+        Firm_v.SelectedIndex = 0;
     }
 
     private async void load_pb_Click(object sender, EventArgs e)

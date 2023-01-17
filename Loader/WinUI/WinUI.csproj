@@ -7,6 +7,13 @@
     <UseWindowsForms>true</UseWindowsForms>
     <ImplicitUsings>enable</ImplicitUsings>
     <ApplicationIcon>Assets/phnxdrgn.ico</ApplicationIcon>
+    <AssemblyName>CuraProfileLoader-WinUI</AssemblyName>
+
+    <SelfContained>true</SelfContained>
+    <PublishSingleFile>true</PublishSingleFile>
+    <PublishReadyToRun>false</PublishReadyToRun>
+    <PublishTrimmed>false</PublishTrimmed>
+
   </PropertyGroup>
 
   <ItemGroup>

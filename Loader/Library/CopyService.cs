@@ -1,5 +1,3 @@
-using System.Runtime.InteropServices;
-
 namespace Loader.Library;
 
 public class CopyService
@@ -56,17 +54,17 @@ public class CopyService
 
     private static string GetAppDataDirectory()
     {
-        if (RuntimeInformation.IsOSPlatform(OSPlatform.Windows))
+        if (OperatingSystem.IsWindows())
         {
             return Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData);
         }
 
-        if (RuntimeInformation.IsOSPlatform(OSPlatform.OSX))
+        if (OperatingSystem.IsMacOS())
         {
             return Path.Join(Environment.GetFolderPath(Environment.SpecialFolder.UserProfile), "Library", "Application Support");
         }
 
-        throw new InvalidOperationException($"Unknown operating system. - {RuntimeEnvironment.GetSystemVersion()}.");
+        throw new InvalidOperationException($"Unknown operating system.");
     }
 
     private async Task DownloadFile(Logger logger, string url, string dir)

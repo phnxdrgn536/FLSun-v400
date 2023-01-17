@@ -4,6 +4,21 @@ public record DownloadDirectory(string Name, string[] Files);
 
 public class DownloadList : List<DownloadDirectory>
 {
+    public readonly static string[] Firmwares = new[]
+    {
+        "stock",
+        "Reflashed",
+    };
+
+    public readonly static string[] Versions = new[]
+    {
+        "5.0",
+        "5.1",
+        "5.2",
+        "5.3",
+        "5.4",
+    };
+
     public DownloadList() : base()
     {
         Add(new(Directories.Extruders, new[] { "extruders/flsun_v400_extruder_0.def.json" }));

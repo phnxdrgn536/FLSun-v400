@@ -40,11 +40,8 @@ partial class Form1
         //
         this.Cura_v.FormattingEnabled = true;
         this.Cura_v.Items.AddRange(new object[] {
-        "5.0",
-        "5.1",
-        "5.2",
-        "5.3",
-        "5.4"});
+        ""
+        });
         this.Cura_v.Location = new System.Drawing.Point(139, 12);
         this.Cura_v.Name = "Cura_v";
         this.Cura_v.Size = new System.Drawing.Size(50, 28);
@@ -56,8 +53,8 @@ partial class Form1
         //
         this.Firm_v.FormattingEnabled = true;
         this.Firm_v.Items.AddRange(new object[] {
-        "stock",
-        "Reflashed"});
+        ""
+        });
         this.Firm_v.Location = new System.Drawing.Point(139, 45);
         this.Firm_v.Name = "Firm_v";
         this.Firm_v.Size = new System.Drawing.Size(100, 28);
