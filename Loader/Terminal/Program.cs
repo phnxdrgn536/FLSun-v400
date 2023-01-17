@@ -28,6 +28,9 @@ else
     Console.WriteLine("Whoops!");
 }
 
+Console.WriteLine("Press any key to exit.");
+Console.ReadKey();
+
 static string GetInput(string message, string[] options)
 {
     Console.ForegroundColor = ConsoleColor.Magenta;
