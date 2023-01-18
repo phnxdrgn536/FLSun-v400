@@ -3,6 +3,19 @@
 
 public static class SelectionHelpers
 {
+    public static string GetInput(string message, string[] options)
+    {
+        Console.ForegroundColor = ConsoleColor.Magenta;
+        Console.WriteLine($"{message}: (Use arrow keys to select, Enter to submit.)");
+
+        var selection = SelectionHelpers.MakeSelection(options);
+
+        Console.ResetColor();
+        Console.WriteLine(string.Empty);
+
+        return options[selection];
+    }
+
     public static int MakeSelection(IEnumerable<string> options)
     {
         var selected = 0;

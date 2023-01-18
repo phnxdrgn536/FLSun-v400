@@ -4,17 +4,32 @@ namespace Loader.Library;
 
 public class Logger : IDisposable
 {
-    private readonly string _fileName = $".\\output-{DateTime.Now:yyyyMMdd-hhmmss}.txt";
+    private readonly string _fileName;
+    private readonly bool _standardOut;
     private readonly StringBuilder _buffer = new();
     private bool _disposed = false;
 
-    public Logger()
+    public Logger(bool standardOut = false)
     {
-        WriteLine("Start", DateTime.Now.ToString("o"));
+        var now = DateTime.Now;
+
+        _fileName = Path.Join(Directory.GetCurrentDirectory(), $"output-{now:yyyyMMdd-hhmmss}.txt");
+        _standardOut = standardOut;
+
+        WriteLine("Start", now.ToString("o"));
     }
 
-    public void WriteLine(string type, string content) =>
-        _buffer.AppendLine($"{type.ToUpper()}:\t\t{content}");
+    public void WriteLine(string type, string content)
+    {
+        var line = $"{type.ToUpper()}:\t\t{content}";
+
+        _buffer.AppendLine(line);
+
+        if (_standardOut)
+        {
+            Console.WriteLine(line);
+        }
+    }
 
     protected virtual void Dispose(bool disposing)
     {
