@@ -8,23 +8,23 @@
     "net7.0-windows7.0": []
   },
   "packageFolders": {
-    "C:\\Users\\jljac\\.nuget\\packages\\": {},
+    "C:\\Users\\joseph.jackson\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\jljac\\source\\repos\\CPL\\Cura Profile Loader\\Cura Profile Loader.csproj",
+      "projectUniqueName": "C:\\Users\\joseph.jackson\\Documents\\GitHub\\FLSun-v400\\CPL Project\\Cura Profile Loader\\Cura Profile Loader.csproj",
       "projectName": "CPL",
-      "projectPath": "C:\\Users\\jljac\\source\\repos\\CPL\\Cura Profile Loader\\Cura Profile Loader.csproj",
-      "packagesPath": "C:\\Users\\jljac\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\jljac\\source\\repos\\CPL\\Cura Profile Loader\\obj\\",
+      "projectPath": "C:\\Users\\joseph.jackson\\Documents\\GitHub\\FLSun-v400\\CPL Project\\Cura Profile Loader\\Cura Profile Loader.csproj",
+      "packagesPath": "C:\\Users\\joseph.jackson\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\joseph.jackson\\Documents\\GitHub\\FLSun-v400\\CPL Project\\Cura Profile Loader\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\jljac\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\joseph.jackson\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],

@@ -1,0 +1,74 @@
+<html>
+<head>
+<meta charset="utf-8"/>
+<title>Settings and replacement patterns</title>
+<script type="text/javascript">
+function showJSON(file) {
+  var xobj = new XMLHttpRequest();
+  xobj.overrideMimeType("application/json");
+  xobj.open('GET', file, false);
+  xobj.onreadystatechange = function () {
+    if (xobj.readyState == 4 && xobj.status == "200") {
+      var json = JSON.parse(xobj.responseText);
+
+      for(var category_id in json.settings) {
+        var category = json.settings[category_id];
+        document.write("<tr><th colspan=\"3\">" + category.label + "</th></tr>");
+        formatSettings(category.children);
+      }
+    }
+  };
+  xobj.send(null);
+}
+
+function formatSettings(settings) {
+  for(var setting_id in settings) {
+    var setting = settings[setting_id];
+    document.write("<tr><td>{" + setting_id + "}</td><td>" + setting.label + "</td><td>" + setting.description + "</td></tr>");
+    if(setting.children) {
+      formatSettings(setting.children)
+    }
+  }
+}
+</script>
+</head>
+<body>
+  <h1>Settings and replacement patterns</h1>
+  <h2>Application-defined patterns</h2>
+  <table>
+  <script type="text/javascript">
+    formatSettings({
+      "time": {"label": "", "description": "Time when slicing started"},
+      "date": {"label": "", "description": "Date when slicing started"},
+      "day": {"label": "", "description": "Day when slicing started"},
+      "initial_extruder_nr": {"label": "", "description": "The first extruder train used for the print"},
+      "print_temperature": {"label": "", "description": "Alias for material_print_temperature (deprecated, do not use)"},
+      "print_bed_temperature": {"label": "", "description": "Alias for material_bed_temperature (deprecated, do not use)"},
+      "travel_speed": {"label": "", "description": "Alias for speed_travel (deprecated, do not use)"},
+      "material_id": {"label": "", "description": "The id of the material (eg 'ultimaker_pla_blue')"},
+      "material_type": {"label": "", "description": "The type of material (eg 'PLA')"},
+      "material_name": {"label": "", "description": "The display name of the material (eg 'Blue PLA'"},
+      "material_brand": {"label": "", "description": "The brand of the material (eg 'Ultimaker')"},
+      "print_time": {"label": "", "description": "The print duration in ISO8601 format"},
+      "filament_amount": {"label": "", "description": "List of the lengths of extruded filaments per extruder"},
+      "filament_weight": {"label": "", "description": "List of the weights of extruded filament per extruder, if material density is known"},
+      "filament_cost": {"label": "", "description": "List of the cost of the extruded filaments per extruder, if the price of the material is known"},
+      "jobname": {"label": "", "description": "Print job name"}
+    });
+  </script>
+  </table>
+  <h2>Settings</h2>
+  <p>The following settings are defined in <a href="https://github.com/Ultimaker/Cura/blob/master/resources/definitions/fdmprinter.def.json">fdmprinter.def.json</a>.</p>
+  <table>
+  <script type="text/javascript">
+    showJSON("https://raw.githubusercontent.com/Ultimaker/Cura/master/resources/definitions/fdmprinter.def.json");
+  </script>
+  </table>
+  <h2>Extruder settings</h2>
+  <p>The following settings are defined in <a href="https://github.com/Ultimaker/Cura/blob/master/resources/definitions/fdmextruder.def.json">fdmextruder.def.json</a>, and are only settable per extruder</p>
+  <table>
+  <script type="text/javascript">
+    showJSON("https://raw.githubusercontent.com/Ultimaker/Cura/master/resources/definitions/fdmextruder.def.json");
+  </script>
+  </table>
+</body>
