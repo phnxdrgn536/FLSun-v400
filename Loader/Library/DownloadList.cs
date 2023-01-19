@@ -94,5 +94,9 @@ public class DownloadList : List<DownloadDirectory>
         Add(new(Directories.FormatQuality(Filaments.PETG, .4), new[] { "quality/PETG/0.4/flsun_v400_0.4_PETG_High_Quality.inst.cfg" }));
         Add(new(Directories.FormatQuality(Filaments.PETG, .4), new[] { "quality/PETG/0.4/flsun_v400_0.4_PETG_Normal_Quality.inst.cfg" }));
         Add(new(Directories.FormatQuality(Filaments.PETG, .4), new[] { "quality/PETG/0.4/flsun_v400_0.4_PETG_VeryDraft_Print.inst.cfg" }));
+
+        Add(new(Directories.FormatQuality(Filaments.TPU, .4), new[] { "quality/TPU/0.4/flsun_v400_0.4_TPU_Draft_Print.inst.cfg" }));
+        Add(new(Directories.FormatQuality(Filaments.TPU, .4), new[] { "quality/TPU/0.4/flsun_v400_0.4_TPU_Fast_Print.inst.cfg" }));
+        Add(new(Directories.FormatQuality(Filaments.TPU, .4), new[] { "quality/TPU/0.4/flsun_v400_0.4_TPU_Normal_Quality.inst.cfg" }));
     }
 }
