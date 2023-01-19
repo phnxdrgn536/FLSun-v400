@@ -12,12 +12,15 @@ app.HelpOption();
 
 var whatIf = app.Option("--whatIf", "Test run the app, does not modify anything.", CommandOptionType.NoValue);
 var stdOut = app.Option("--log", "Log the output to the terminal.", CommandOptionType.NoValue);
-var firmware = string.Empty;
-var cura = string.Empty;
+var firmwareOpts = DownloadList.Firmwares.Select(_ => _.Label).ToArray();
+string? firmware = null;
+string? cura = null;
 
 while (string.IsNullOrEmpty(firmware))
 {
-    firmware = SelectionHelpers.GetInput("Select Firmware", DownloadList.Firmwares);
+    var selection = SelectionHelpers.GetInput("Select Klipper", firmwareOpts);
+
+    firmware = DownloadList.Firmwares.FirstOrDefault(_ => _.Label == selection)?.Value;
 }
 
 while (string.IsNullOrEmpty(cura))
@@ -27,17 +30,7 @@ while (string.IsNullOrEmpty(cura))
 
 app.OnExecuteAsync(async (CancellationToken cancellationToken) =>
 {
-    return await CopyFilesAsync(firmware, cura, whatIf.Values.Count > 0, stdOut.Values.Count > 0);
-});
-
-return await app.ExecuteAsync(args);
-
-static async Task<int> CopyFilesAsync(string firmware, string cura, bool whatIf, bool stdOut)
-{
-    var copyService = new CopyService(whatIf);
-    using var logger = new Logger(stdOut);
-
-    var success = await copyService.CopyFilesAsync(logger, firmware, cura);
+    var success = await CopyFilesAsync(firmware, cura, whatIf.Values.Count > 0, stdOut.Values.Count > 0);
 
     if (success)
     {
@@ -56,4 +49,19 @@ static async Task<int> CopyFilesAsync(string firmware, string cura, bool whatIf,
     Console.ReadKey();
 
     return success ? 0 : 1;
+});
+
+return await app.ExecuteAsync(args);
+
+static async Task<bool> CopyFilesAsync(string firmware, string cura, bool whatIf, bool stdOut)
+{
+    using var logger = new Logger(stdOut);
+    var copyService = new CopyService(whatIf);
+
+    Console.ForegroundColor = ConsoleColor.Cyan;
+    Console.WriteLine("Please wait ...");
+    Console.WriteLine(string.Empty);
+    Console.ResetColor();
+
+    return await copyService.CopyFilesAsync(logger, firmware, cura);
 }
