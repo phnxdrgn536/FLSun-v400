@@ -69,15 +69,19 @@ public class CopyService
 
     private async Task DownloadFile(Logger logger, string url, string dir)
     {
-        string? download = null;
+        var download = Array.Empty<byte>();
 
-        logger.WriteLine("Download", $"{BASE_ADDRESS.TrimEnd('/')}{url}");
+        logger.WriteLine("Download", $"{BASE_ADDRESS}{url}");
 
         if (!_whatIf)
         {
             try
             {
-                download = await _client.GetStringAsync(url);
+                var response = await _client.GetAsync(url);
+
+                response.EnsureSuccessStatusCode();
+
+                download = await response.Content.ReadAsByteArrayAsync();
             }
             catch (Exception ex)
             {
@@ -87,10 +91,10 @@ public class CopyService
             }
         }
 
-        WriteFile(logger, dir, Path.GetFileName(url), download);
+        await WriteFile(logger, dir, Path.GetFileName(url), download);
     }
 
-    private void WriteFile(Logger logger, string directory, string fileName, string? content)
+    private async Task WriteFile(Logger logger, string directory, string fileName, byte[] content)
     {
         if (!Directory.Exists(directory))
         {
@@ -103,7 +107,7 @@ public class CopyService
 
         if (!_whatIf)
         {
-            File.WriteAllText(path, content);
+            await File.WriteAllBytesAsync(path, content);
         }
     }
 }
