@@ -1,13 +1,14 @@
 namespace Loader.Library;
 
+public record FirmwareOption(string Value, string Label);
 public record DownloadDirectory(string Name, string[] Files);
 
 public class DownloadList : List<DownloadDirectory>
 {
-    public readonly static string[] Firmwares = new[]
+    public readonly static FirmwareOption[] Firmwares = new[]
     {
-        "stock",
-        "Reflashed",
+        new FirmwareOption("stock", "FLSUN"),
+        new FirmwareOption("Reflashed", "Official"),
     };
 
     public readonly static string[] Versions = new[]
@@ -16,7 +17,6 @@ public class DownloadList : List<DownloadDirectory>
         "5.1",
         "5.2",
         "5.3",
-        "5.4",
     };
 
     public DownloadList() : base()
