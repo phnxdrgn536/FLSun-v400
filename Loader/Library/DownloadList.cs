@@ -7,8 +7,8 @@ public class DownloadList : List<DownloadDirectory>
 {
     public readonly static FirmwareOption[] Firmwares = new[]
     {
-        new FirmwareOption("stock", "FLSUN"),
-        new FirmwareOption("Reflashed", "Official"),
+        new FirmwareOption("FLSUN", "FLSUN"),
+        new FirmwareOption("Official", "Official"),
     };
 
     public readonly static string[] Versions = new[]
