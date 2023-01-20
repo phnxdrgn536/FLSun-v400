@@ -52,6 +52,36 @@ public class CopyService
     private static string GetCuraLocation(string? version) =>
         Path.Join(GetAppDataDirectory(), "cura", version);
 
+    private static bool IsUnixLike()
+    {
+        // Should return true if the system behaves like a
+        // "traditional" Unix system.
+        return (OperatingSystem.IsLinux() || OperatingSystem.IsFreeBSD());
+    }
+
+    private static string GetUnixAppDataDirectory()
+    {
+        string? xdgDataHomeMaybe = Environment.GetEnvironmentVariable("XDG_DATA_HOME");
+
+        if (xdgDataHomeMaybe == null)
+        {
+            string? homeMaybe = Environment.GetEnvironmentVariable("HOME");
+
+            if (homeMaybe == null)
+            {
+                throw new InvalidOperationException($"Environment variable HOME does not exist!.");
+            }
+            else
+            {
+                return Path.Join(homeMaybe, ".local", "share");
+            }
+        }
+        else
+        {
+            return xdgDataHomeMaybe;
+        }
+    }
+
     private static string GetAppDataDirectory()
     {
         if (OperatingSystem.IsWindows())
@@ -62,6 +92,11 @@ public class CopyService
         if (OperatingSystem.IsMacOS())
         {
             return Path.Join(Environment.GetFolderPath(Environment.SpecialFolder.UserProfile), "Library", "Application Support");
+        }
+
+        if (IsUnixLike())
+        {
+            return GetUnixAppDataDirectory();
         }
 
         throw new InvalidOperationException($"Unknown operating system.");
