@@ -6,8 +6,6 @@ If you like my work, don't hesitate to support me by buying me a 🍺 or a ☕. 
 
 Anyone who would like to help contribute to this GitHub whether it be with writing instructions and webdesign, to submitting their own profiles and varients, please start a discussion and request access.
 
-[ ![Download](https://viatesting.files.wordpress.com/2020/03/paypal-donate-button.png) ](https://www.paypal.me/phnxdrgn536)
-  
   (NOTE) Before attempting to load these profiles you should delete any V400 printer that you have already added to Cura and delete any of the original profile files
   that you installed from FLSun.
   
@@ -27,5 +25,7 @@ Anyone who would like to help contribute to this GitHub whether it be with writi
   Then choose the current version of Cura you have installed that you want the profiles to be installed to<br/>
   ![version](https://user-images.githubusercontent.com/120244371/213608470-64c35b97-92f1-481c-8dea-d07a2d180e61.PNG)<br/>
   Once complete open Cura and enjoy!<br/>
-
+  <br/>
+  <br/>
+  [ ![Download](https://viatesting.files.wordpress.com/2020/03/paypal-donate-button.png) ](https://www.paypal.me/phnxdrgn536)
 <meta name="google-site-verification" content="eb2YYJj-4wQhYDYOwVVPqjZcSYBYNtfb4C_Jn26zf2U" />
