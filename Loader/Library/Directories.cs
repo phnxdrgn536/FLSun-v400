@@ -9,6 +9,6 @@ public static class Directories
     public readonly static string Quality = "quality";
     public readonly static string Intent = "intent";
 
-    public static string FormatIntent(Filaments material) => $"{Intent}\\{material}";
-    public static string FormatQuality(Filaments material, double size) => $"{Quality}\\{material}\\{size}";
+    public static string FormatIntent(Filaments material) => Path.Join(Intent, material.ToString());
+    public static string FormatQuality(Filaments material, double size) => Path.Join(Quality, material.ToString(), size.ToString());
 }
