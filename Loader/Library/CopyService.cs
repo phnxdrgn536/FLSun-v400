@@ -59,29 +59,6 @@ public class CopyService
         return (OperatingSystem.IsLinux() || OperatingSystem.IsFreeBSD());
     }
 
-    private static string GetUnixAppDataDirectory()
-    {
-        string? xdgDataHomeMaybe = Environment.GetEnvironmentVariable("XDG_DATA_HOME");
-
-        if (xdgDataHomeMaybe == null)
-        {
-            string? homeMaybe = Environment.GetEnvironmentVariable("HOME");
-
-            if (homeMaybe == null)
-            {
-                throw new InvalidOperationException($"Environment variable HOME does not exist!.");
-            }
-            else
-            {
-                return Path.Join(homeMaybe, ".local", "share");
-            }
-        }
-        else
-        {
-            return xdgDataHomeMaybe;
-        }
-    }
-
     private static string GetAppDataDirectory()
     {
         if (OperatingSystem.IsWindows())
@@ -96,7 +73,7 @@ public class CopyService
 
         if (IsUnixLike())
         {
-            return GetUnixAppDataDirectory();
+            return Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData);
         }
 
         throw new InvalidOperationException($"Unknown operating system.");
