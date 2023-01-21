@@ -1,7 +1,8 @@
 # FLSun-v400
-![phoenix-dragon](https://user-images.githubusercontent.com/120244371/213612065-fd265003-1f9e-4f3d-84ce-a9c64056be3b.jpg)
+![phoenix-dragon](https://user-images.githubusercontent.com/120244371/213762474-e79f7d55-1285-479a-bb30-43ef9041dd15.jpg)
+<br/>
 <a>Repository of helpful files for V400 printer<a/>
-<br />
+<br/>
 
 If you like my work, don't hesitate to support me by buying me a 🍺 or a ☕. Thank you 🙂
 
