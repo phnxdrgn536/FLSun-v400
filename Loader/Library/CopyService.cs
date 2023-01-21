@@ -52,6 +52,13 @@ public class CopyService
     private static string GetCuraLocation(string? version) =>
         Path.Join(GetAppDataDirectory(), "cura", version);
 
+    private static bool IsUnixLike()
+    {
+        // Should return true if the system behaves like a
+        // "traditional" Unix system.
+        return (OperatingSystem.IsLinux() || OperatingSystem.IsFreeBSD());
+    }
+
     private static string GetAppDataDirectory()
     {
         if (OperatingSystem.IsWindows())
@@ -62,6 +69,11 @@ public class CopyService
         if (OperatingSystem.IsMacOS())
         {
             return Path.Join(Environment.GetFolderPath(Environment.SpecialFolder.UserProfile), "Library", "Application Support");
+        }
+
+        if (IsUnixLike())
+        {
+            return Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData);
         }
 
         throw new InvalidOperationException($"Unknown operating system.");
