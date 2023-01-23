@@ -13,7 +13,7 @@
         "has_variants": true,
         "preferred_variant_name": "0.4",
         "preferred_quality_type": "normal",
-        "variants_name": "Nozzel Size",
+        "variants_name": "Nozzle Size",
         "machine_extruder_trains":{
             "0": "flsun_v400_extruder_0"
         }
