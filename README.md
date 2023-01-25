@@ -8,7 +8,7 @@ If you like my work, don't hesitate to support me by buying me a 🍺 or a ☕. 
 
 Anyone who would like to help contribute to this GitHub whether it be with writing instructions and webdesign, to submitting their own profiles and varients, please start a discussion and request access.
 
-  (NOTE) Before attempting to load these profiles you should delete any V400 printer that you have already added to Cura and delete any of the original profile files
+  ## NOTE: Before attempting to load these profiles you should delete any V400 printer that you have already added to Cura and delete any of the original profile files
   that you installed from FLSun.
   
   Cura profile files can be downloaded by clicking <a href="https://github.com/phnxdrgn536/FLSun-v400/raw/main/cura%20Profile%20files.zip">HERE<a/><br/>
