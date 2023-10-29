@@ -34,7 +34,7 @@
 ########################
       <cura:setting key="klipper_pressure_advance_enable">yes</cura:setting>
       <cura:setting key="machine_firmware_retract">yes</cura:setting>
-      <cura:setting key="klipper_pressure_advance_factor">=material_print_temperature * 0.0004 -0.048</cura:setting> #0.025 a 0.2 et 0.031 a 0.3 #-0.061
+      <cura:setting key="klipper_pressure_advance_factor">=material_print_temperature * 0.0004 -0.048</cura:setting> #0.025 a 0.2 et 0.031 a 0.3 #-0.061 #has change after extruder calibration
       <cura:setting key="klipper_retract_length">=material_print_temperature * 0.0125 - 2.125</cura:setting> #default 0.5
       <cura:setting key="klipper_retract_speed">40</cura:setting>
       <cura:setting key="klipper_retraction_speed">40</cura:setting>
