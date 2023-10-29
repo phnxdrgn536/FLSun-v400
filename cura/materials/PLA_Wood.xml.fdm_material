@@ -1,0 +1,41 @@
+<?xml version='1.0' encoding='utf-8'?>
+<fdmmaterial xmlns="http://www.ultimaker.com/material" xmlns:cura="http://www.ultimaker.com/cura" version="1.3">
+  <metadata>
+    <name>
+      <brand>iSANMATE</brand>
+      <material>PLA_Wood</material>
+      <color>Generic</color>
+      <label>PLA_Wood</label>
+    </name>
+    <version>2</version>
+    <GUID>ba7c2ba9-fdb5-4025-8f99-f7ea90371e67</GUID>
+    <color_code>#CD7776</color_code>
+    <description />
+    <adhesion_info />
+  </metadata>
+  <properties>
+    <density>1.10</density>
+    <diameter>1.75</diameter>
+  </properties>
+  <settings>
+    <setting key="print temperature">210.0</setting>
+    <setting key="heated bed temperature">60.0</setting>
+    <setting key="standby temperature">100</setting>
+    <setting key="retraction speed">40.0</setting>
+    <setting key="retraction amount">2.5</setting>
+	
+	<cura:setting key="klipper_pressure_advance_enable">True</cura:setting>
+	<cura:setting key="machine_firmware_retract">True</cura:setting>
+	<cura:setting key="klipper_pressure_advance_factor">0.014</cura:setting>
+	<cura:setting key="klipper_retract_length">2.5</cura:setting>
+	<cura:setting key="klipper_retract_speed">40</cura:setting>
+	<cura:setting key="klipper_retraction_speed">40</cura:setting>
+	<cura:setting key="klipper_retract_prime_length ">0.0</cura:setting>
+	<cura:setting key="klipper_retract_prime_speed">40</cura:setting>
+	<cura:setting key="klipper_smooth_time_factor">0.01</cura:setting>
+	
+	
+	<cura:setting key="speed_topbottom">=math.ceil(speed_print * 10 /20)</cura:setting>
+	<cura:setting key="speed_wall">=math.ceil(speed_print * 10 /20)</cura:setting>
+  </settings>
+</fdmmaterial>
