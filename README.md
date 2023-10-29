@@ -32,5 +32,5 @@ Anyone who would like to help contribute to this GitHub whether it be with writi
   Once complete open Cura and enjoy!<br/>
   <br/>
   <br/>
-  [ ![Download](https://viatesting.files.wordpress.com/2020/03/paypal-donate-button.png) ](https://www.paypal.me/moicraphy)
+  [ ![Download](https://viatesting.files.wordpress.com/2020/03/paypal-donate-button.png) ](https://www.paypal.me/phnxdrgn536)
 <meta name="google-site-verification" content="eb2YYJj-4wQhYDYOwVVPqjZcSYBYNtfb4C_Jn26zf2U" />
