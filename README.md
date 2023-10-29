@@ -26,6 +26,9 @@ Anyone who would like to help contribute to this GitHub whether it be with writi
   ![terminal](https://user-images.githubusercontent.com/120244371/213608139-f380c7fc-117c-47f0-9735-22dd80f796a0.PNG)<br/>
   Then choose the current version of Cura you have installed that you want the profiles to be installed to<br/>
   ![version](https://user-images.githubusercontent.com/120244371/213608470-64c35b97-92f1-481c-8dea-d07a2d180e61.PNG)<br/>
+
+  To use materials specific profils you will need KlipperSettingsPlugin installed in Cura <br/>
+  
   Once complete open Cura and enjoy!<br/>
   <br/>
   <br/>
