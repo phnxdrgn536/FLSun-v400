@@ -1,6 +1,6 @@
 {
     "version": 2,
-    "name": "Flsun V400",
+    "name": "Flsun V400 Advanced",
     "inherits": "fdmprinter",
     "metadata": {
         "visible": true,
