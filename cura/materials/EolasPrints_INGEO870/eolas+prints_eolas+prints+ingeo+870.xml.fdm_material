@@ -1,0 +1,84 @@
+<?xml version='1.0' encoding='ASCII'?>
+<fdmmaterial xmlns="http://www.ultimaker.com/material" xmlns:cura="http://www.ultimaker.com/cura" version="1.3">
+  <metadata>
+    <name>
+      <brand>Eolas Prints</brand>
+      <material>Eolas Prints INGEO 870</material>
+      <color>Generic</color>
+      <label>Eolas Prints INGEO 870</label>
+    </name>
+    <cura:breakaway_compatible>False</cura:breakaway_compatible>
+    <GUID>b5c5caf9-2f24-3a8b-a740-27be663f9e6d</GUID>
+    <version>6</version>
+    <cura:pva_compatible>False</cura:pva_compatible>
+    <color_code>#218815</color_code>
+    <cura:ppa_original_file>generic_pla</cura:ppa_original_file>
+    <adhesion_info>Use glue.</adhesion_info>
+  </metadata>
+  <properties>
+    <diameter>2.85</diameter>
+    <density>1.22</density>
+  </properties>
+  <settings>
+    <cura:setting key="speed_infill">68</cura:setting>
+    <setting key="build volume temperature">32</setting>
+    <cura:setting key="layer_height_0">0.2</cura:setting>
+    <setting key="no load move factor">0.94</setting>
+    <setting key="break preparation speed">2</setting>
+    <cura:setting key="speed_wall">45</cura:setting>
+    <cura:setting key="speed_topbottom">35</cura:setting>
+    <cura:setting key="prime_tower_enable">no</cura:setting>
+    <cura:setting key="cool_fan_speed_min">100</cura:setting>
+    <cura:setting key="jerk_travel">50</cura:setting>
+    <setting key="break preparation position">-16</setting>
+    <cura:setting key="wall_thickness">1</cura:setting>
+    <setting key="flush purge speed">0.5</setting>
+    <cura:setting key="machine_nozzle_cool_down_speed">0.75</cura:setting>
+    <setting key="surface energy">100</setting>
+    <setting key="break temperature">95.0</setting>
+    <cura:setting key="speed_wall_0">23</cura:setting>
+    <cura:setting key="top_bottom_thickness">1</cura:setting>
+    <setting key="break position">-50</setting>
+    <setting key="flush purge length">60</setting>
+    <setting key="anti ooze retract speed">5</setting>
+    <cura:setting key="support_top_distance">0.35</cura:setting>
+    <cura:setting key="cool_min_layer_time">5.2</cura:setting>
+    <setting key="adhesion tendency">0</setting>
+    <setting key="end of filament purge length">20</setting>
+    <setting key="print cooling">100</setting>
+    <setting key="end of filament purge speed">0.5</setting>
+    <cura:setting key="cool_fan_speed_max">100</cura:setting>
+    <setting key="print temperature">214</setting>
+    <setting key="break preparation temperature">214</setting>
+    <cura:setting key="support_extruder_nr">0</cura:setting>
+    <setting key="heated bed temperature">60</setting>
+    <setting key="anti ooze retract position">-4</setting>
+    <cura:setting key="infill_line_width">0.42</cura:setting>
+    <cura:setting key="machine_nozzle_heat_up_speed">1.6</cura:setting>
+    <setting key="maximum park duration">7200</setting>
+    <cura:setting key="adhesion_type">skirt</cura:setting>
+    <cura:setting key="cool_fan_full_at_height">0.5</cura:setting>
+    <cura:setting key="speed_layer_0">20</cura:setting>
+    <setting key="break speed">25</setting>
+    <setting key="standby temperature">175</setting>
+    <cura:setting key="speed_print">70</cura:setting>
+    <machine>
+      <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker S5"/>
+      <machine_identifier manufacturer="Ultimaker B.V." product="Ultimaker S7"/>
+      <hotend id="AA 0.4">
+        <setting key="hardware compatible">yes</setting>
+      </hotend>
+      <hotend id="BB 0.8"/>
+      <hotend id="CC 0.6">
+        <setting key="hardware compatible">yes</setting>
+      </hotend>
+      <hotend id="AA 0.8">
+        <setting key="hardware compatible">yes</setting>
+      </hotend>
+      <hotend id="BB 0.4"/>
+      <hotend id="AA 0.25">
+        <setting key="hardware compatible">yes</setting>
+      </hotend>
+    </machine>
+  </settings>
+</fdmmaterial>
