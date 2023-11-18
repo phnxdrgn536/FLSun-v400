@@ -97,6 +97,34 @@
                                     "value": "speed_wall * 2",
                                     "limit_to_extruder": "wall_x_extruder_nr",
                                     "settable_per_mesh": true
+                                },
+                                "speed_wall_0_roofing":
+                                {
+                                    "label": "Top Surface Outer Wall Speed",
+                                    "description": "The speed at which the top surface outermost wall is printed.",
+                                    "unit": "mm/s",
+                                    "type": "float",
+                                    "minimum_value": "0.1",
+                                    "maximum_value": "math.sqrt(machine_max_feedrate_x ** 2 + machine_max_feedrate_y ** 2)",
+                                    "maximum_value_warning": "150",
+                                    "default_value": 30,
+                                    "value": "speed_wall_0",
+                                    "limit_to_extruder": "wall_0_extruder_nr",
+                                    "settable_per_mesh": true
+                                },
+                                "speed_wall_x_roofing":
+                                {
+                                    "label": "Top Surface Inner Wall Speed",
+                                    "description": "The speed at which the top surface inner walls are printed.",
+                                    "unit": "mm/s",
+                                    "type": "float",
+                                    "minimum_value": "0.1",
+                                    "maximum_value": "math.sqrt(machine_max_feedrate_x ** 2 + machine_max_feedrate_y ** 2)",
+                                    "maximum_value_warning": "150",
+                                    "default_value": 60,
+                                    "value": "speed_wall_x",
+                                    "limit_to_extruder": "wall_x_extruder_nr",
+                                    "settable_per_mesh": true
                                 }
                             }
                         },
@@ -440,6 +468,36 @@
                                     "enabled": "resolveOrValue('acceleration_enabled')",
                                     "limit_to_extruder": "wall_x_extruder_nr",
                                     "settable_per_mesh": true
+                                },
+                                "acceleration_wall_0_roofing":
+                                {
+                                    "label": "Top Surface Outer Wall Acceleration",
+                                    "description": "The acceleration with which the top surface outermost walls are printed.",
+                                    "unit": "mm/s\u00b2",
+                                    "type": "float",
+                                    "minimum_value": "0.1",
+                                    "minimum_value_warning": "100",
+                                    "maximum_value_warning": "10000",
+                                    "default_value": 3000,
+                                    "value": "acceleration_wall_0",
+                                    "enabled": "resolveOrValue('acceleration_enabled')",
+                                    "limit_to_extruder": "wall_0_extruder_nr",
+                                    "settable_per_mesh": true
+                                },
+                                "acceleration_wall_x_roofing":
+                                {
+                                    "label": "Top Surface Inner Wall Acceleration",
+                                    "description": "The acceleration with which the top surface inner walls are printed.",
+                                    "unit": "mm/s\u00b2",
+                                    "type": "float",
+                                    "minimum_value": "0.1",
+                                    "minimum_value_warning": "100",
+                                    "maximum_value_warning": "10000",
+                                    "default_value": 3000,
+                                    "value": "acceleration_wall_x",
+                                    "enabled": "resolveOrValue('acceleration_enabled')",
+                                    "limit_to_extruder": "wall_x_extruder_nr",
+                                    "settable_per_mesh": true
                                 }
                             }
                         },
@@ -739,6 +797,34 @@
                                     "enabled": "resolveOrValue('jerk_enabled')",
                                     "limit_to_extruder": "wall_x_extruder_nr",
                                     "settable_per_mesh": true
+                                },
+                                "jerk_wall_0_roofing":
+                                {
+                                    "label": "Top Surface Outer Wall Jerk",
+                                    "description": "The maximum instantaneous velocity change with which the top surface outermost walls are printed.",
+                                    "unit": "mm/s",
+                                    "type": "float",
+                                    "minimum_value": "0",
+                                    "maximum_value_warning": "50",
+                                    "default_value": 20,
+                                    "value": "jerk_wall_0",
+                                    "enabled": "resolveOrValue('jerk_enabled')",
+                                    "limit_to_extruder": "wall_0_extruder_nr",
+                                    "settable_per_mesh": true
+                                },
+                                "jerk_wall_x_roofing":
+                                {
+                                    "label": "Top Surface Inner Wall Jerk",
+                                    "description": "The maximum instantaneous velocity change with which the top surface inner walls are printed.",
+                                    "unit": "mm/s",
+                                    "type": "float",
+                                    "minimum_value": "0",
+                                    "maximum_value_warning": "50",
+                                    "default_value": 20,
+                                    "value": "jerk_wall_x",
+                                    "enabled": "resolveOrValue('jerk_enabled')",
+                                    "limit_to_extruder": "wall_x_extruder_nr",
+                                    "settable_per_mesh": true
                                 }
                             }
                         },
@@ -938,7 +1024,7 @@
                 }
             }
         },
-        
+
         "machine_extruder_count": {
             "default_value": 1
         },
@@ -987,10 +1073,10 @@
             "default_value": 15
         },
         "machine_start_gcode": {
-            "default_value": "G21\nG90\nM82\nM107 T0\nM140 S{material_bed_temperature}\nM104 S{material_print_temperature} T0\nM190 S{material_bed_temperature}\nM109 S{material_print_temperature} T0\nG28\nG1 F3000 Z1\nG1 X-150 Y0 Z0.4\nG92 E0\nG3 X0 Y-130 I150 Z0.3 E30 F2000\nG92 E0\n"
+            "default_value": ";Nozzle diameter = {machine_nozzle_size}\n;Filament type = {material_type}\n;Filament name = {material_brand} {material_name}\n;Filament weight = {filament_weight}\n;M109 S{material_print_temperature}\n;M190 S{material_bed_temperature}\nSTART_PRINT BED_TEMP={material_bed_temperature_layer_0} EXTRUDER_TEMP={material_print_temperature_layer_0}\n"
         },
         "machine_end_gcode": {
-            "default_value": "M107 T0\nM104 S0\nM104 S0 T1\nM140 S0\nG92 E0\nG91\nG1 E-1 F300\nG1 Z+0.5  F6000\nG28 \nG90 ;absolute positioning\n"
+            "default_value": "END_PRINT\n"
         }
     }
 }
